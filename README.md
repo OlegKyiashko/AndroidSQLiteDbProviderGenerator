@@ -2,6 +2,10 @@ AndroidSQLiteDbProviderGenerator
 ================================
 
 android sqlite dbProvider by generator
+dependences: 
+        bash shell (linux/bsd or other unixes or cygwin)
+        grep
+        sed
 
 Usage:
 ./sqlitegen.sh javaFile [packageName]
