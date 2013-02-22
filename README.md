@@ -1,7 +1,8 @@
 AndroidSQLiteDbProviderGenerator
 ================================
 
-android sqlite dbProvider by generator
+android sqlite dbProvider generator
+
 dependences: 
         bash shell (linux/bsd or other unixes or cygwin)
         grep
