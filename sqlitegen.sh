@@ -99,7 +99,7 @@ echo "        );
 
     private ArrayList<${DATA}> Cursor2DataArray(Cursor cursor) {
         ArrayList<${DATA}> dataArray = new ArrayList<${DATA}>();
-        if (cursor != null) {
+        if (cursor != null && cursor.getCount() > 0) {
             cursor.moveToFirst();
             Cursor2ColumnIndexes(cursor);
             do {
