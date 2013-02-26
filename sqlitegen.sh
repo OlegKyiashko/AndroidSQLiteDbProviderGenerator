@@ -167,5 +167,19 @@ echo "        );
         return Get(null, null);
     }
 
+    public long count() {
+        return count(null);
+    }
+
+    public long count(String where) {
+        String query = "SELECT count(*) FROM " + TABLE;
+        if (where != null && !"".equals(where))
+             query += "WHERE " + where;
+        Cursor cursor = db.rawQuery(query, null);
+        cursor.moveToFirst();
+        long cnt = cursor.getLong(0);
+        return cnt;
+    }
+
 }">>${FNJ}
 
